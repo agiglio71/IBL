@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
+using Sei.Uno.Models;
+
 //using Sei.Uno.Extensions;
 
 namespace Sei.Uno
@@ -10,7 +12,7 @@ namespace Sei.Uno
     {
         static void Main(string[] args)
         {
-            DoUno();
+            DoDue();
             Console.ReadLine();
         }
 
@@ -39,6 +41,26 @@ namespace Sei.Uno
             Console.WriteLine(formatted);
 
             //Console.WriteLine(query.ToFormatted());
+        }
+
+        private static void DoDue()
+        {
+            Provincia[] provincie = new Provincia[]
+            {
+                new Provincia("Napoli", "NA", new Comune[] { new Comune("Napoli"), new Comune("Casoria"), new Comune("Arzano")}),
+                new Provincia("Roma", "RM", new Comune[] { new Comune("Pomezia"), new Comune("Ardea"), new Comune("Torvaianica")}),
+                new Provincia("Romoli", "RN", new Comune[] { new Comune("Pomezia"), new Comune("Casoria"), new Comune("Torvaianica"), new Comune("Arzano")})
+            };
+
+            foreach (Provincia provincia in provincie.OrderBy(c => c.Descrizione))
+            {
+                Console.WriteLine($"{provincia.Descrizione} ({provincia.Sigla})");
+                foreach (Comune comune in provincia.Comuni.OrderBy(c => c.Descrizione))
+                    Console.WriteLine($"\t{comune.Descrizione}");
+            }
+            provincie.SelectMany(c => c.Comuni).Distinct().OrderBy(c => c.Descrizione).ToList().ForEach(comune => Console.WriteLine(comune.Descrizione));
+            //provincie.SelectMany(c => c.Comuni).Distinct(new Comune()).OrderBy(c => c.Descrizione).ToList().ForEach(comune => Console.WriteLine(comune.Descrizione));
+
         }
     }
 }
