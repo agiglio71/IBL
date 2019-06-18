@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quattro.Tre", "Quattro.Tre\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinque.Uno", "Cinque.Uno\Cinque.Uno.csproj", "{07B04E42-BBF6-4B0D-B101-23587E98DA61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinque.Due", "Cinque.Due\Cinque.Due.csproj", "{0EDF97BE-9556-4212-A068-80FDECF4A5AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinque.Due", "Cinque.Due\Cinque.Due.csproj", "{0EDF97BE-9556-4212-A068-80FDECF4A5AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sei.Uno", "Sei.Uno\Sei.Uno.csproj", "{5920B5D8-C46B-48B2-A73B-806910F5AE9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0EDF97BE-9556-4212-A068-80FDECF4A5AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EDF97BE-9556-4212-A068-80FDECF4A5AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EDF97BE-9556-4212-A068-80FDECF4A5AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5920B5D8-C46B-48B2-A73B-806910F5AE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5920B5D8-C46B-48B2-A73B-806910F5AE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5920B5D8-C46B-48B2-A73B-806910F5AE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5920B5D8-C46B-48B2-A73B-806910F5AE9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

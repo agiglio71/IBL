@@ -59,8 +59,7 @@ namespace Cinque.Uno
             
             // Local function
             Int32 somma(Int32 op1, Int32 op2) { return op1 + op2; };
-            Int32 prodotto(Int32 op1, Int32 op2) { return op1 + op2; };
-            Int32 divisione(Int32 op1, Int32 op2) { return op1 + op2; };
+            Int32 divisione(Int32 op1, Int32 op2) { return op1 / op2; };
             
             calcolatrice.AddCifra(1);
             calcolatrice.Operazione(somma);
@@ -74,7 +73,7 @@ namespace Cinque.Uno
             Console.WriteLine(calcolatrice.Totale().ToString());
 
             calcolatrice.AddCifra(5);
-            calcolatrice.Operazione(prodotto);
+            calcolatrice.Operazione((op1, op2) => op1 * op2);
             calcolatrice.AddCifra(3);
 
             Console.WriteLine(calcolatrice.Totale().ToString());
