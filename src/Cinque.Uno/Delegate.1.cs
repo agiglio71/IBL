@@ -8,7 +8,9 @@ namespace Cinque.Uno.Uno
 
     public class TheClass
     {
-        public String ConvertiInStringa(Int32 intero) { return intero.ToString(); }
+        public String ConvertiInStringa(Int32 intero) {
+            return intero.ToString();
+        }
     }
 
 }

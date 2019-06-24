@@ -52,7 +52,13 @@ namespace Sei.Uno
                 new Provincia("Romoli", "RN", new Comune[] { new Comune("Pomezia"), new Comune("Casoria"), new Comune("Torvaianica"), new Comune("Arzano")})
             };
 
-            foreach (Provincia provincia in provincie.OrderBy(c => c.Descrizione))
+            provincie
+                .Where(c => c.Descrizione.StartsWith("Ro"))
+                .Select(d => d.Descrizione + " (" + d.Sigla + ")")
+                .ToList()
+                .ForEach(c => Console.WriteLine(c));
+
+            foreach (Provincia provincia in provincie.OrderBy(c=>c.Descrizione))
             {
                 Console.WriteLine($"{provincia.Descrizione} ({provincia.Sigla})");
                 foreach (Comune comune in provincia.Comuni.OrderBy(c => c.Descrizione))

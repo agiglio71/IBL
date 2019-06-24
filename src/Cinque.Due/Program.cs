@@ -1,4 +1,4 @@
-﻿using Cinque.Due.Due;
+﻿using Cinque.Due.Uno;
 using System;
 
 namespace Cinque.Due
@@ -8,7 +8,7 @@ namespace Cinque.Due
         static void Main(string[] args)
         {
             //DoUno();
-            DoDue();
+            //DoDue();
         }
         //static void DoUno()
         //{
@@ -16,6 +16,9 @@ namespace Cinque.Due
         //    AutomobileMonitor monitor = new AutomobileMonitor();
         //    automobile.MotoreFuoriGiri += monitor.GestisciMotoreFuoriGiri;
         //    automobile.MotoreSpento += monitor.GestisciMotoreSpento;
+
+
+        //    0.IsPari();
 
         //    automobile.Accellera();
         //    automobile.MettiInMoto();
@@ -33,26 +36,26 @@ namespace Cinque.Due
         //    Console.ReadLine();
         //}
 
-        static void DoDue()
-        {
-            Automobile automobile = new Automobile();
-            automobile.MotoreFuoriGiri += () => Console.WriteLine("Il motore è fuori giri.");
-            automobile.MotoreSpento += () => Console.WriteLine("Il motore è spento.");
+        //static void DoDue()
+        //{
+        //    Automobile automobile = new Automobile();
+        //    automobile.MotoreFuoriGiri += () => Console.WriteLine("Il motore è fuori giri.");
+        //    automobile.MotoreSpento += () => Console.WriteLine("Il motore è spento.");
 
-            automobile.Accellera();
-            automobile.MettiInMoto();
-            automobile.Decellera();
+        //    automobile.Accellera();
+        //    automobile.MettiInMoto();
+        //    automobile.Decellera();
 
-            automobile.MettiInMoto();
+        //    automobile.MettiInMoto();
 
-            automobile.Accellera();
-            automobile.Accellera();
-            automobile.Accellera();
-            automobile.Accellera();
-            automobile.Accellera();
-            automobile.Accellera();
+        //    automobile.Accellera();
+        //    automobile.Accellera();
+        //    automobile.Accellera();
+        //    automobile.Accellera();
+        //    automobile.Accellera();
+        //    automobile.Accellera();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 }

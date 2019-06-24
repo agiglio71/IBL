@@ -22,7 +22,8 @@ namespace Cinque.Uno.Due
         }
     }
 
-    // In questa classe non ho l'implementazione del metodo che converte in stringa
+    // In questa classe non ho l'implementazione del 
+    // metodo che converte in stringa
     public class ClasseSenzaImplementazione
     {
         public Int32ToString DelegatoIntero { get; set; } = null;
